@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  content:"";
+  clear: both;
+  display: block
+}
+
+header {
+  background-color: black;
+  color: white;
+}
+
+.menu p {
+  float: left
+}
+
+.menu p img {
+  height: 65px;
+}
+
+
+.menu ul {
+  margin: 0;
+  padding: 35px 0 0 25px;
+  display: inline-block;
+  list-style: none;
+  font-family: Ludica Sans Unicode;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.menu li a {
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  color: RoyalBlue;
+  text-decoration: none;
+}
+
+.Top {
+  height: 737px;
+  background-image: url("top_img.jpg");  
+  background-color: white;
+  background-size: cover; 
+}
+
+.Top p {
+  padding: 250px 0px;
+  font-size: 60px;
+  color: LightGray;
+  text-align: center;
+  font-family: Terminal, SimSun;
+}
+
+.Profile {
+  height: 820px;
+}
+
+.Profile h1 {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.Profile h2 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.Profile_left {
+  padding-left: 150px;
+  float: left;
+  width: 30%;
+}
+
+.Profile_left p {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.Profile_left img {
+  width: 550px;
+  text-align: center;
+}
+
+.Profile_left h4 {
+  font-size: 18px;
+}
+
+
+.Profile_right {
+  float: left;
+  width: 50%;
+}
+
+.Profile_right img {
+  padding-left: 20px;
+  width: 800px;
+}
+
+.Works {
+  height: 820px;
+  background-color: WhiteSmoke;
+}
+
+.Blog {
+  height: 820px;
+}
+
+.Vision {
+  height: 820px;
+  background-color: WhiteSmoke;
+}
+
+.Contact {
+  height: 820px;
+  color: white;
+  background-color: black;
+}
+
+
+
+/*
+
+
+body {
+  font-family: YuGothic, "游ゴシック", "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+  background-color: #ddd;
+  font-size: 14px;
+}
+
+ 背景画像の挿入 
+header {
+  background-image: url("bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+ 背景画像の処理 
+#logo img {
+  max-width: 120px;
+  border: 5px solid #fff;
+  border-radius: 100%;
+}
+
+nav {
+  margin: 0 0 30px 0;
+  padding: 10px 0;
+  text-align: center;
+  display: inline-block;
+  background-color: #fff;
+  font-size: 14px;
+  color: #999;
+  letter-spacing: 0.15em;
+}
+
+.container {
+  max-width: 800px;
+  margin: -100px auto 0;
+  background-color: #fff;
+}
+
+footer {
+  padding: 20px 0;
+  font-size: 93%;
+  text-align: center;
+  background-color: #ccc;
+  color: #666;
+}
+
+*/
