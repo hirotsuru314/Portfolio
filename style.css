@@ -9,7 +9,7 @@
   display: block
 }
 
-header {
+.header {
   background-color: black;
   color: white;
 }
@@ -19,12 +19,12 @@ header {
 }
 
 .menu p img {
-  height: 65px;
+  height: 67px;
 }
 
 
 .menu ul {
-  margin: 0;
+  float: left;
   padding: 35px 0 0 25px;
   display: inline-block;
   list-style: none;
@@ -48,41 +48,38 @@ header {
 }
 
 .Top {
-  height: 737px;
+  height: 400px;
   background-image: url("top_img.jpg");  
   background-color: white;
-  background-size: cover; 
+  background-size: 100% auto; 
+  background-repeat: no-repeat;
 }
 
 .Top p {
-  padding: 250px 0px;
-  font-size: 60px;
+  padding: 120px 0px;
+  font-size: 50px;
   color: LightGray;
   text-align: center;
   font-family: Terminal, SimSun;
 }
 
 .Profile {
-  height: 820px;
+  height: 1400px;
 }
 
 .Profile h1 {
   font-size: 50px;
   text-align: center;
   padding-top: 20px;
-  padding-bottom: 5px;
 }
 
-.Profile h2 {
+
+.Profile_left h2 {
+  float: left;
   font-size: 30px;
   text-align: center;
   padding-top: 10px;
-}
-
-.Profile_left {
-  padding-left: 150px;
-  float: left;
-  width: 30%;
+  padding-left: 310px;
 }
 
 .Profile_left p {
@@ -98,88 +95,164 @@ header {
 
 .Profile_left h4 {
   font-size: 18px;
+  padding-left: 160px;
 }
 
 
-.Profile_right {
+.Profile_right h2 {
+  padding-left: 310px;
+}
+
+.Profile_right img {
+  width: 750px;
+}
+
+.Works {
+  position: relative;
+  height: 720px;
+  background-color: WhiteSmoke;
+    
+  background-image: url("works.jpg");  
+  background-size: 100% auto; 
+  background-repeat: no-repeat;
+}
+
+.Works h1 {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.work1 {
+  background: repeating-linear-gradient(45deg, #444, #444 15px, #888 0, #888 35px);
+　opacity: 0.8;
+  position: absolute;
+  height: 450px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  top: 150px;
+  left: 10%;
+}
+
+.work1 p {
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+  font-size: 40px;
+}
+
+
+.work2 {
+  background: repeating-linear-gradient(45deg, #444, #444 15px, #888 0, #888 35px);
+  position: absolute;
+  height: 450px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  top: 150px;
+  left: 60%;
+}
+
+.work2 p {
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+  font-size: 40px;
+}
+
+
+.Blog {
+  height: 650px;
+}
+
+.Blog h1 {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 5px;  
+}
+
+.Blog_left {
   float: left;
   width: 50%;
 }
 
-.Profile_right img {
-  padding-left: 20px;
-  width: 800px;
+.Blog_left p {
+  text-align: center;
 }
 
-.Works {
-  height: 820px;
-  background-color: WhiteSmoke;
+.Blog_left p img {
+  width: 600px;
 }
 
-.Blog {
-  height: 820px;
+.Blog_right {
+  float: left;
+  width: 50%;
 }
 
 .Vision {
   height: 820px;
   background-color: WhiteSmoke;
+  
+  background-image: url("vision.jpg");  
+  background-size: 100% auto; 
+  background-repeat: no-repeat;
 }
 
 .Contact {
-  height: 820px;
+  height: 400px;
   color: white;
   background-color: black;
 }
 
 
+/* ########### 768 px以上 ############ */
+@media (min-width: 768px) {
 
-/*
-
-
-body {
-  font-family: YuGothic, "游ゴシック", "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
-  background-color: #ddd;
-  font-size: 14px;
+.clearfix:after {
+  content:"";
+  clear: both;
+  display: block
 }
 
- 背景画像の挿入 
-header {
-  background-image: url("bg.jpg");
-  background-position: center center;
-  background-size: cover;
+.Top {
+  height: 750px;
+  background-image: url("top_img.jpg");  
+  background-color: white;
+  background-size: 100% auto; 
   background-repeat: no-repeat;
 }
 
- 背景画像の処理 
-#logo img {
-  max-width: 120px;
-  border: 5px solid #fff;
-  border-radius: 100%;
-}
-
-nav {
-  margin: 0 0 30px 0;
-  padding: 10px 0;
+.Top p {
+  padding: 250px 0px;
+  font-size: 60px;
+  color: LightGray;
   text-align: center;
-  display: inline-block;
-  background-color: #fff;
-  font-size: 14px;
-  color: #999;
-  letter-spacing: 0.15em;
+  font-family: Terminal, SimSun;
 }
 
-.container {
-  max-width: 800px;
-  margin: -100px auto 0;
-  background-color: #fff;
+.Profile {
+  height: 770px;
+}
+  
+.Profile_left {
+  float: left;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}  
+  
+.Profile_right {
+  float: left;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}  
+  
 }
 
-footer {
-  padding: 20px 0;
-  font-size: 93%;
-  text-align: center;
-  background-color: #ccc;
-  color: #666;
-}
 
-*/
+
+
