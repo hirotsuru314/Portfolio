@@ -1,6 +1,17 @@
+/* 全体指定 */
 * {
   margin: 0;
   padding: 0;
+}
+
+html {
+	font-family: "メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック",
+	              "MS PGothic",Helvetica,Arial,sans-serif;
+}
+
+a {
+  text-decoration: none;
+
 }
 
 .clearfix:after {
@@ -9,46 +20,56 @@
   display: block
 }
 
+/* ヘッダー */
+
 .header {
-  background-color: black;
-  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 62px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
 }
 
-.menu p {
-  float: left
-}
-
-.menu p img {
-  height: 67px;
-}
-
-
-.menu ul {
+nav p {
   float: left;
-  padding: 35px 0 0 25px;
-  display: inline-block;
+  font-size: 30px;
+  font-family: cursive;
+  padding-left: 20px;
+  padding-top: 8px;
+}
+
+nav p a {
+  color: rgba(255, 255, 255, 0.9); 
+}
+
+nav ul {
+  float: left;
+  padding: 30px 0 0 25px;
   list-style: none;
   font-family: Ludica Sans Unicode;
 }
 
-.menu ul li {
+nav ul li {
   display: inline-block;
   margin: 0px 30px;
 }
 
-.menu li a {
-  color: white;
+nav li a {
+  color: rgba(255, 255, 255, 0.9);
   font-size: 17px;
-  text-decoration: none;
 }
 
-.menu li a:hover {
+nav li a:hover {
   color: RoyalBlue;
   text-decoration: none;
 }
 
+/* トップ画面 */
+
 .Top {
-  height: 400px;
+  height: 810px;
   background-image: url("top_img.jpg");  
   background-color: white;
   background-size: 100% auto; 
@@ -56,76 +77,86 @@
 }
 
 .Top p {
-  padding: 120px 0px;
+  padding: 130px 0px;
   font-size: 50px;
   color: LightGray;
   text-align: center;
   font-family: Terminal, SimSun;
 }
 
-.Profile {
-  height: 1400px;
-}
+/* プロフィール画面 */
 
 .Profile h1 {
-  font-size: 50px;
+  font-size: 45px;
   text-align: center;
-  padding-top: 20px;
 }
-
 
 .Profile_left h2 {
   float: left;
-  font-size: 30px;
+  font-size: 27px;
   text-align: center;
-  padding-top: 10px;
-  padding-left: 310px;
+  width: 100%;
 }
 
 .Profile_left p {
-  padding-top: 10px;
+  padding-top: 0px;
   text-align: center;
-  font-size: 18px;
 }
 
 .Profile_left img {
-  width: 550px;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+}
+
+.Career {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .Profile_left h4 {
   font-size: 18px;
-  padding-left: 160px;
 }
 
 
 .Profile_right h2 {
-  padding-left: 310px;
+  font-size: 27px;
+  text-align: center;
+  
+}
+
+.Profile_right p {
+  text-align: center;
+  margin: 0 auto;
 }
 
 .Profile_right img {
-  width: 750px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
 }
+
+
+/* Works画面 */
 
 .Works {
   position: relative;
   height: 720px;
-  background-color: WhiteSmoke;
-    
   background-image: url("works.jpg");  
   background-size: 100% auto; 
   background-repeat: no-repeat;
 }
 
 .Works h1 {
-  font-size: 50px;
+  font-size: 45px;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 5px;
 }
 
 .work1 {
-  background: repeating-linear-gradient(45deg, #444, #444 15px, #888 0, #888 35px);
+  background: repeating-linear-gradient(45deg, rgba(68, 68, 68, 0.7), #444 15px, #888 0, #888 35px);
 　opacity: 0.8;
   position: absolute;
   height: 450px;
@@ -145,7 +176,7 @@
 
 
 .work2 {
-  background: repeating-linear-gradient(45deg, #444, #444 15px, #888 0, #888 35px);
+  background: repeating-linear-gradient(45deg, rgba(68, 68, 68, 0.7), #444 15px, #888 0, #888 35px);
   position: absolute;
   height: 450px;
   width: 30%;
@@ -162,13 +193,14 @@
   font-size: 40px;
 }
 
+/* Blog画面 */
 
 .Blog {
-  height: 650px;
+  height: 700px;
 }
 
 .Blog h1 {
-  font-size: 50px;
+  font-size: 45px;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 5px;  
@@ -181,10 +213,14 @@
 
 .Blog_left p {
   text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+
 }
 
 .Blog_left p img {
-  width: 600px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .Blog_right {
@@ -192,21 +228,114 @@
   width: 50%;
 }
 
+.Blog_right h2 {
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+.Blog_right p {
+  font-size: 20px;
+  width: 85%;
+  padding-top: 10px;
+}
+
+.Blog_right li {
+  font-size: 20px;
+  line-height: 50px;
+}
+
+/* Vision画面 */
+
 .Vision {
-  height: 820px;
+  height: 700px;
+  position: relative;
   background-color: WhiteSmoke;
-  
   background-image: url("vision.jpg");  
   background-size: 100% auto; 
   background-repeat: no-repeat;
 }
 
-.Contact {
-  height: 400px;
-  color: white;
-  background-color: black;
+.Vision h1 {
+  font-size: 45px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 5px;  
 }
 
+.Vision h2 {
+  font-size: 35px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 5px;  
+}
+
+.Vision1 {
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  height: 60%;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  top: 30%;
+  left: 10%;
+}
+
+
+.Vision1 h3 {
+  font-size: 26px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.Vision1 p {
+  font-size: 22px;
+  padding-left: 13px;
+  padding-right: 13px;
+  line-height: 2.0;  
+}
+
+.Vision2 {
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  height: 60%;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  top: 30%;
+  left: 60%;
+}
+
+.Vision2 h3 {
+  font-size: 26px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.Vision2 p {
+  font-size: 22px;
+  padding-left: 13px;
+  padding-right: 13px;
+  line-height: 2.0;  
+}
+
+/* Contact画面 */
+
+.Contact {
+  height: 500px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.92);
+}
+
+.Contact h1 {
+  font-size: 45px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 5px;  
+}
+
+.contact_form {
+  border-radius: 3px;
+}
 
 /* ########### 768 px以上 ############ */
 @media (min-width: 768px) {
@@ -217,16 +346,9 @@
   display: block
 }
 
-.Top {
-  height: 750px;
-  background-image: url("top_img.jpg");  
-  background-color: white;
-  background-size: 100% auto; 
-  background-repeat: no-repeat;
-}
 
 .Top p {
-  padding: 250px 0px;
+  padding: 300px 0px;
   font-size: 60px;
   color: LightGray;
   text-align: center;
@@ -234,7 +356,7 @@
 }
 
 .Profile {
-  height: 770px;
+  height: 700px;
 }
   
 .Profile_left {
@@ -251,6 +373,19 @@
   margin-right: auto;
 }  
   
+.Vision_left {
+  float: left;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}  
+  
+.Vision_right {
+  float: left;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}    
 }
 
 
