@@ -1,4 +1,4 @@
-/* 全体指定 */
+/* ########## 全体指定 ########## */
 * {
   margin: 0;
   padding: 0;
@@ -20,11 +20,11 @@ a {
   display: block
 }
 
-/* ヘッダー */
+/* ########## ヘッダー ########## */
 
 .header {
   background-color: rgba(0, 0, 0, 0.7);
-  height: 62px;
+  height: 75px;
   width: 100%;
   position: fixed;
   top: 0px;
@@ -34,10 +34,11 @@ a {
 
 nav p {
   float: left;
-  font-size: 30px;
+  font-size: 22px;
   font-family: cursive;
   padding-left: 20px;
   padding-top: 8px;
+  width: 100%;
 }
 
 nav p a {
@@ -46,19 +47,19 @@ nav p a {
 
 nav ul {
   float: left;
-  padding: 30px 0 0 25px;
+  padding: 5px 0 0 15px;
   list-style: none;
   font-family: Ludica Sans Unicode;
 }
 
 nav ul li {
   display: inline-block;
-  margin: 0px 30px;
+  margin: 0px 20px;
 }
 
 nav li a {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 17px;
+  font-size: 14px;
 }
 
 nav li a:hover {
@@ -66,10 +67,41 @@ nav li a:hover {
   text-decoration: none;
 }
 
-/* トップ画面 */
+
+/* ### 1024 px以上 ### */
+@media (min-width: 1024px) {
+.header {
+  height: 62px;
+}
+  
+nav p {
+  float: left;
+  font-size: 29px;
+  font-family: cursive;
+  padding-left: 20px;
+  padding-top: 8px;
+  width: 25%;
+}
+
+nav ul {
+  padding: 30px 0 0 25px;
+}
+
+nav ul li {
+  margin: 0px 30px;
+}
+
+nav li a {
+  font-size: 16px;
+}
+}
+
+
+
+/* ########## トップ画面 ########## */
 
 .Top {
-  height: 810px;
+  height: 670px;
   background-image: url("top_img.jpg");  
   background-color: white;
   background-size: 100% auto; 
@@ -77,41 +109,71 @@ nav li a:hover {
 }
 
 .Top p {
-  padding: 130px 0px;
-  font-size: 50px;
+  padding-top: 25%;
+  font-size: 40px;
   color: LightGray;
   text-align: center;
   font-family: Terminal, SimSun;
 }
 
-/* プロフィール画面 */
+
+/* ### 600 px以下 ### */
+@media (max-width: 600px) {
+.Top {
+  height: 400px;
+}  
+  
+.Top p {
+  font-size: 25px;
+}
+
+
+}
+
+/* ### 1024 px以上 ### */
+@media (min-width: 1024px) {
+.Top {
+  height: 810px;
+}
+
+.Top p {
+  font-size: 60px;
+}
+}
+  
+
+
+
+/* ########## プロフィール画面 ########## */
 
 .Profile h1 {
   font-size: 45px;
   text-align: center;
+  padding-top: 5px;
 }
+
 
 .Profile_left h2 {
   float: left;
-  font-size: 27px;
+  font-size: 25px;
   text-align: center;
+  padding-bottom: 5px;
   width: 100%;
 }
 
 .Profile_left p {
-  padding-top: 0px;
   text-align: center;
 }
 
 .Profile_left img {
-  width: 65%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
 .Career {
-  width: 80%;
+  width: 65%;
   margin: 0 auto;
 }
 
@@ -121,9 +183,8 @@ nav li a:hover {
 
 
 .Profile_right h2 {
-  font-size: 27px;
+  font-size: 25px;
   text-align: center;
-  
 }
 
 .Profile_right p {
@@ -133,16 +194,79 @@ nav li a:hover {
 
 .Profile_right img {
   text-align: center;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
 }
 
 
-/* Works画面 */
+/* ### 600 px以下 ### */
+@media (max-width: 600px) {
+
+.Profile {
+  height: 910px;
+}
+
+.Profile h1 {
+  font-size: 35px;
+}
+
+.Profile_left h2 {
+  font-size: 20px;
+}
+
+.Profile_right h2 {
+  font-size: 20px;
+}
+
+
+}
+
+/* ### 1024 px以上 ### */
+@media (min-width: 1024px) {
+
+.Profile {
+  height: 710px;
+}
+
+.Profile_left {
+  float: left;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}  
+
+.Profile_left img {
+  width: 60%;
+}
+
+.Career {
+  width: 75%;
+}
+  
+.Profile_right {
+  float: left;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}  
+
+
+.Profile_right img {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+  
+
+}
+
+
+/*########## Works画面 ########## */
 
 .Works {
   position: relative;
-  height: 720px;
+  height: 600px;
   background-image: url("works.jpg");  
   background-size: 100% auto; 
   background-repeat: no-repeat;
@@ -155,48 +279,105 @@ nav li a:hover {
   padding-bottom: 5px;
 }
 
-.work1 {
+.Work1 {
   background: repeating-linear-gradient(45deg, rgba(68, 68, 68, 0.7), #444 15px, #888 0, #888 35px);
 　opacity: 0.8;
   position: absolute;
-  height: 450px;
-  width: 30%;
+  height: 33vw;
+  width: 33vw;
   margin-left: auto;
   margin-right: auto;
   top: 150px;
   left: 10%;
 }
 
-.work1 p {
+.Work1 p {
   color: white;
   text-align: center;
-  padding-top: 200px;
-  font-size: 40px;
+  padding-top: 35%;
+  font-size: 25px;
 }
 
-
-.work2 {
+.Work2 {
   background: repeating-linear-gradient(45deg, rgba(68, 68, 68, 0.7), #444 15px, #888 0, #888 35px);
   position: absolute;
-  height: 450px;
-  width: 30%;
+  height: 33vw;
+  width: 33vw;
   margin-left: auto;
   margin-right: auto;
   top: 150px;
   left: 60%;
 }
 
-.work2 p {
+.Work2 p {
   color: white;
   text-align: center;
-  padding-top: 200px;
-  font-size: 40px;
+  padding-top: 35%;
+  font-size: 25px;
+} 
+
+
+/* ### 600 px以下 ### */
+@media (max-width: 600px) {
+.Works {
+  height: 350px;
+}  
+  
+.Work1 {
+  top: 90px;
+  left: 10%;
 }
 
-/* Blog画面 */
+.Work1 p {
+  font-size: 15px;
+}
+
+
+.Work2 {
+  top: 90px;
+  left: 60%;
+}
+
+.Work2 p {
+  font-size: 15px;
+}
+}
+
+/* ### 1024 px以上 ### */
+@media (min-width: 1024px) {
+.Works {
+  height: 700px;
+}  
+  
+.Work1 {
+  top: 150px;
+  left: 10%;
+}
+
+.Work1 p {
+  font-size: 35px;
+  padding-top: 40%;
+}
+
+
+.Work2 {
+  top: 150px;
+  left: 60%;
+}
+
+.Work2 p {
+  font-size: 35px;
+  padding-top: 40%;
+}
+
+}
+
+
+
+/* ########## Blog画面 ########## */
 
 .Blog {
-  height: 700px;
+  height: 600px;
 }
 
 .Blog h1 {
@@ -229,6 +410,36 @@ nav li a:hover {
 }
 
 .Blog_right h2 {
+  font-size: 18px;
+}
+
+.Blog_right p {
+  font-size: 14px;
+  width: 85%;
+  padding-top: 10px;
+}
+
+.Blog_right li {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+
+/* ### 600 px以下 ### */
+@media (max-width: 600px) {
+.Blog {
+  height: 710px;
+}
+
+}
+
+/* ### 1024 px以上 ### */
+@media (min-width: 1024px) {
+.Blog {
+  height: 700px;
+}
+  
+.Blog_right h2 {
   font-size: 25px;
   padding-top: 20px;
 }
@@ -240,14 +451,17 @@ nav li a:hover {
 }
 
 .Blog_right li {
-  font-size: 20px;
-  line-height: 50px;
+  font-size: 18px;
+  line-height: 48px;
+}
+  
 }
 
-/* Vision画面 */
+
+/* ########## Vision画面 ########## */
 
 .Vision {
-  height: 700px;
+  height: 550px;
   position: relative;
   background-color: WhiteSmoke;
   background-image: url("vision.jpg");  
@@ -256,138 +470,208 @@ nav li a:hover {
 }
 
 .Vision h1 {
-  font-size: 45px;
+  font-size: 30px;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 5px;  
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .Vision h2 {
-  font-size: 35px;
+  font-size: 20px;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 5px;  
 }
 
+  
 .Vision1 {
   background-color: rgba(255, 255, 255, 0.4);
   position: absolute;
-  height: 60%;
-  width: 30%;
+  height: 32vw;
+  width: 35vw;
   margin-left: auto;
   margin-right: auto;
-  top: 30%;
-  left: 10%;
+  top: 20%;
+  left: 5%;
 }
 
 
 .Vision1 h3 {
-  font-size: 26px;
+  font-size: 18px;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .Vision1 p {
-  font-size: 22px;
-  padding-left: 13px;
-  padding-right: 13px;
-  line-height: 2.0;  
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 1.7;  
 }
 
 .Vision2 {
   background-color: rgba(255, 255, 255, 0.4);
   position: absolute;
-  height: 60%;
-  width: 30%;
+  height: 32vw;
+  width: 35vw;
   margin-left: auto;
   margin-right: auto;
-  top: 30%;
+  top: 20%;
+  left: 55%;
+}
+
+.Vision2 h3 {
+  font-size: 18px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.Vision2 p {
+  font-size: 15px;
+  padding-left: 13px;
+  padding-right: 13px;
+  line-height: 1.7;  
+}
+
+
+/* ### 600 px以下 ### */
+@media (max-width: 600px) {
+.Vision h1 {
+  font-size: 12px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.Vision h2 {
+  font-size: 10px;
+  text-align: center;
+}
+
+  
+.Vision1 {
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  height: 32vw;
+  width: 35vw;
+  margin-left: auto;
+  margin-right: auto;
+  top: 10%;
+  left: 5%;
+}
+
+
+.Vision1 h3 {
+  font-size: 8px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.Vision1 p {
+  font-size: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 1.7;  
+}
+
+.Vision2 {
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  height: 32vw;
+  width: 35vw;
+  margin-left: auto;
+  margin-right: auto;
+  top: 10%;
+  left: 55%;
+}
+
+.Vision2 h3 {
+  font-size: 8px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.Vision2 p {
+  font-size: 8px;
+  padding-left: 13px;
+  padding-right: 13px;
+  line-height: 1.7;  
+}
+  
+}
+
+/* ### 1024 px以上 ### */
+@media (min-width: 1024px) {
+.Vision {
+  height: 700px;
+}
+  
+.Vision h1 {
+  font-size: 45px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.Vision h2 {
+  font-size: 33px;
+  text-align: center;
+}
+
+  
+.Vision1 {
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  height: 360px;
+  width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 25%;
+  left: 10%;
+}
+
+
+.Vision1 h3 {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.Vision1 p {
+  font-size: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 1.9;  
+}
+
+.Vision2 {
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  height: 360px;
+  width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 25%;
   left: 60%;
 }
 
 .Vision2 h3 {
-  font-size: 26px;
+  font-size: 24px;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .Vision2 p {
   font-size: 22px;
   padding-left: 13px;
   padding-right: 13px;
-  line-height: 2.0;  
+  line-height: 1.9;  
 }
 
-/* Contact画面 */
-
-.Contact {
-  height: 500px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.92);
-}
-
-.Contact h1 {
-  font-size: 45px;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 5px;  
-}
-
-.contact_form {
-  border-radius: 3px;
-}
-
-/* ########### 768 px以上 ############ */
-@media (min-width: 768px) {
-
-.clearfix:after {
-  content:"";
-  clear: both;
-  display: block
-}
-
-
-.Top p {
-  padding: 300px 0px;
-  font-size: 60px;
-  color: LightGray;
-  text-align: center;
-  font-family: Terminal, SimSun;
-}
-
-.Profile {
-  height: 700px;
-}
   
-.Profile_left {
-  float: left;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}  
-  
-.Profile_right {
-  float: left;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}  
-  
-.Vision_left {
-  float: left;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}  
-  
-.Vision_right {
-  float: left;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}    
 }
-
-
-
 

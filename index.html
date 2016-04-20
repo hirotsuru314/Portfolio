@@ -5,7 +5,20 @@
 	  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="keywords" content="Abnormal,hirotsuru,ポートフォリオ,Portfolio,プログラミング,Ruby,転職">
 	  <meta name="description" content="Abnormalな人生を歩み続けるhirotsuruのポートフォリオサイト。プロフィール、開発実績、ブログ、ビジョンなどを紹介する。" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $('a[href^=#]').click(function(){
+          var speed=400;
+          var href=$(this).attr("href");
+          var targer=$(href=="#" || href=="" ? 'html' : href);
+          var position=target.offset().top;
+          $('body, html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
 	  <title>Hirotsuru's Portfolio</title>
 	  <link rel="stylesheet" type="text/css" href="reset.css" />
 	  <link rel="stylesheet" type="text/css" href="style.css" />
@@ -15,11 +28,10 @@
       <nav>
         <p><a href="https://hirotsuru-works-hirotsuru314.c9users.io/Portfolio/index.html">Hirotsuru's portfolio</a></p>
           <ul class="clearfix">
-  					<li><a href="#">Profile</a></li>
-  					<li><a href="#">Works</a></li>
-    				<li><a href="#">Blog</a></li>
-  					<li><a href="#">Vision</a></li>
-  					<li><a href="#">Contact</a></li>
+  					<li><a href="#Profile">Profile</a></li>
+  					<li><a href="#Works">Works</a></li>
+    				<li><a href="#Blog">Blog</a></li>
+  					<li><a href="#Vision">Vision</a></li>
   			  </ul>
 			</nav>
 	  </header>
@@ -27,18 +39,24 @@
         <p>Challenging myself, </br>pushing my limits away!</p>
     </div>
     
-      <div class="Profile clearfix">
+      <div class="Profile clearfix" id="Profile">
         <h1>Profile</h1>
         <div class="Profile_left">
           <h2><i>Hirotsuru</i></h2></br>
           <p><img src="profile_img.jpg" alt=""></p>
           <div class="Career">
-            <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2012年9月 九州大学大学院 材料物性工学 修士号取得</br>
-            　　　　　　　博士課程に進学</br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2013年4月 日本学術振興会特別研究員となる</br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014年4月 博士課程を中退後、公安職に就く</br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2016年1月 プログラミングに出会う</br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;〜現在　　　エンジニアを目指して日々奮闘中</br></h4>
+            <dl>
+              <dt>2012年9月</dt>
+                <dd>&nbsp;&nbsp;&nbsp;&nbsp;九州大学大学院 材料物性工学 修士号取得後、博士課程に進学</dd>
+              <dt>2013年4月</dt>
+                <dd>&nbsp;&nbsp;&nbsp;&nbsp;日本学術振興会特別研究員となる</dd>
+              <dt>2014年4月</dt>
+                <dd>&nbsp;&nbsp;&nbsp;&nbsp;博士課程を中退後、公安職に就く</dd>
+              <dt>2016年1月</dt>
+                <dd>&nbsp;&nbsp;&nbsp;&nbsp;プログラミングに出会う</dd>  
+              <dt>〜現在</dt>
+                <dd>&nbsp;&nbsp;&nbsp;&nbsp;エンジニアを目指して日々奮闘中</dd>
+            </dl>  
           </div>
         </div>
         <div class="Profile_right">
@@ -47,24 +65,24 @@
         </div>
       </div>
       
-      <div class="Works">
+      <div class="Works" id="Works">
         <h1>Works</h1>
-        <div class="work1">
+　　    <div class="Work1">
           <p>Coming soon!</p>
         </div>
-        <div class="work2">
+        <div class="Work2">
           <p>Coming soon!</p>
         </div>
       </div>
       
-      <div class="Blog clearfix">
+      <div class="Blog clearfix" id="Blog">
         <h1>Blog</h1>
         <div class="Blog_left">
           <p><a href="http://hirotsuru.hatenablog.com/" target="_blank"><img src="blog.png" alt=""></a></p>
         </div>
         <div class="Blog_right">
           <h2>はてなブログを書いています！</h2>
-          <p>経験ゼロ、現職肉体系の私がプログラミングを本気で勉強し,転職するまでの道のりを書いていきます。</br>
+          <p>経験ゼロ、現職肉体系の私がプログラミングを本気で勉強し、転職するまでの道のりを書いていきます。</br>
           内容は、Webアプリケーションの開発記録や勉強したことのまとめ、思いついたことなどいろいろです。</p>
           <p>まだまだ技術的にも未熟ですが、とにかく積極的に学び、どんどんアウトプットしていきたいと思うので、ぜひ読んで見てください！</p>
           <h2>抜粋記事</h2>
@@ -76,36 +94,19 @@
         </div>
       </div>
       
-      <div class="Vision">
+      <div class="Vision" id="Vision">
         <h1>Vision</h1>
         <h2><i>〜Abnormalな人生を歩み続ける〜</i></h2>
         <div class="Vision1">
-          <h3>常に全力で挑戦し続ける</h3></br>
+          <h3>常に全力で挑戦し続ける</h3>
           <p>&nbsp;&nbsp;&nbsp;これまで化学の研究や公安職に従事するなど、様々なことに挑戦してきた。
           また、新たな挑戦としてITの分野に飛び込み、エンジニアとして仕事する。一つ一つの挑戦で学んだことをすべて糧にしてビジネスパーソンとして、ひいては人として成長し続けていく。</p>
         </div>
-        
         <div class="Vision2">
-          <h3>世界を変えるような仕事をする</h3></br>
+          <h3>世界を変えるような仕事をする</h3>
           <p>&nbsp;&nbsp;&nbsp;自分のした仕事が誰かの幸せにつながるような仕事を見つける。たとえせまい世界でも、その世界を変えるような仕事し、自分が存在する世界と存在しない世界、その差を大きくする。輝きながら仕事をしている姿を家族に見せる。</p>
         </div>
-
-
       </div>
-      
-      <div class="Contact">
-        <h1>Contact</h1>
-        <form action="" method="post" class="contact_form">
-          <input type="text" name="name" placeholder="Your Name" />
-          <input type="text" name="email" placeholder="Your Email" />
-          <input type="text" name="subject" placeholder="Your Subject" />
-          <input type="text" name="message" placeholder="Your Message" />
-         </form>
-      </div>
-    </div>
-	  <footer>
-
-	  </footer>
 	  </div>
   </body>
 </html>
