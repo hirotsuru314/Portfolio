@@ -2,10 +2,11 @@
 <html lang="ja">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Abnormal,hirotsuru,ポートフォリオ,Portfolio,プログラミング,Ruby,転職">
 	  <meta name="description" content="Abnormalな人生を歩み続けるhirotsuruのポートフォリオサイト。プロフィール、開発実績、ブログ、ビジョンなどを紹介する。" />
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=1000">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script>
       $(function(){
@@ -26,7 +27,7 @@
   <body>
 	  <header class="header clearfix">
       <nav>
-        <p><a href="https://hirotsuru-works-hirotsuru314.c9users.io/Portfolio/index.html">Hirotsuru's portfolio</a></p>
+        <h1><a href="http://www.hirotsuru.sakura.ne.jp/portfolio/index.html">Hirotsuru's portfolio</a></h1>
           <ul class="clearfix">
   					<li><a href="#Profile">Profile</a></li>
   					<li><a href="#Works">Works</a></li>
@@ -35,14 +36,15 @@
   			  </ul>
 			</nav>
 	  </header>
+<!----------  トップ画面	---------->  
     <div class="Top">
-        <p>Challenging myself, </br>pushing my limits away!</p>
+        <p id="motto">Challenging myself,<br>pushing my limits away!</p>
     </div>
-    
+<!----------  プロフィール画面	----------> 
       <div class="Profile clearfix" id="Profile">
-        <h1>Profile</h1>
+        <h2>Profile</h2>
         <div class="Profile_left">
-          <h2><i>Hirotsuru</i></h2></br>
+          <h3><i>Hirotsuru</i></h3><br>
           <p><img src="profile_img.jpg" alt=""></p>
           <div class="Career">
             <dl>
@@ -60,32 +62,34 @@
           </div>
         </div>
         <div class="Profile_right">
-          <h2><i>My skills</i></h2>
+          <h3><i>My skills</i></h3>
           <p><img src="my_skill.jpeg" alt=""></p>
         </div>
       </div>
-      
+
+<!----------  Works画面	---------->       
       <div class="Works" id="Works">
-        <h1>Works</h1>
+        <h2>Works</h2>
 　　    <div class="Work1">
-          <p>Coming soon!</p>
+          <h3>Coming soon!</h3>
         </div>
         <div class="Work2">
-          <p>Coming soon!</p>
+          <h3>Coming soon!</h3>
         </div>
       </div>
       
+<!----------  Blog画面	---------->       
       <div class="Blog clearfix" id="Blog">
-        <h1>Blog</h1>
+        <h2>Blog</h2>
         <div class="Blog_left">
           <p><a href="http://hirotsuru.hatenablog.com/" target="_blank"><img src="blog.png" alt=""></a></p>
         </div>
         <div class="Blog_right">
-          <h2>はてなブログを書いています！</h2>
-          <p>経験ゼロ、現職肉体系の私がプログラミングを本気で勉強し、転職するまでの道のりを書いていきます。</br>
-          内容は、Webアプリケーションの開発記録や勉強したことのまとめ、思いついたことなどいろいろです。</p>
-          <p>まだまだ技術的にも未熟ですが、とにかく積極的に学び、どんどんアウトプットしていきたいと思うので、ぜひ読んで見てください！</p>
-          <h2>抜粋記事</h2>
+          <h3>はてなブログを書いています！</h3>
+          <p id="blog_intro">経験ゼロ、現職肉体系の私がプログラミングを本気で勉強し、転職するまでの道のりを書いていきます。<br>
+          内容は、Webアプリケーションの開発記録や勉強したことのまとめ、思いついたことなどいろいろです。<br>
+          まだまだ技術的にも未熟ですが、とにかく積極的に学び、どんどんアウトプットしていきたいと思うので、ぜひ読んで見てください！</p>
+          <h3>抜粋記事</h3>
             <ul>
               <li><a href="#">・ノンプログラマが１週間でポートフォリオを作ってみた</a></li>
               <li><a href="http://hirotsuru.hatenablog.com/entry/2016/04/05/200432" target=_blank>・初心者はRailsを勉強するな？</a></li>
@@ -93,20 +97,20 @@
             </ul>
         </div>
       </div>
-      
+
+<!----------   Vision画面	---------->       
       <div class="Vision" id="Vision">
-        <h1>Vision</h1>
-        <h2><i>〜Abnormalな人生を歩み続ける〜</i></h2>
+        <h2>Vision</h2>
+        <h3><i>〜Abnormalな人生を歩み続ける〜</i></h3>
         <div class="Vision1">
-          <h3>常に全力で挑戦し続ける</h3>
-          <p>&nbsp;&nbsp;&nbsp;これまで化学の研究や公安職に従事するなど、様々なことに挑戦してきた。
-          また、新たな挑戦としてITの分野に飛び込み、エンジニアとして仕事する。一つ一つの挑戦で学んだことをすべて糧にしてビジネスパーソンとして、ひいては人として成長し続けていく。</p>
+          <h4>常に全力で挑戦し続ける</h4>
+          <h5>&nbsp;&nbsp;&nbsp;これまで化学の研究や公安職に従事するなど、様々なことに挑戦してきた。
+          また、新たな挑戦としてITの分野に飛び込み、エンジニアとして仕事する。一つ一つの挑戦で学んだことをすべて糧にしてビジネスパーソンとして、ひいては人として成長し続けていく。</h6>
         </div>
         <div class="Vision2">
-          <h3>世界を変えるような仕事をする</h3>
-          <p>&nbsp;&nbsp;&nbsp;自分のした仕事が誰かの幸せにつながるような仕事を見つける。たとえせまい世界でも、その世界を変えるような仕事し、自分が存在する世界と存在しない世界、その差を大きくする。輝きながら仕事をしている姿を家族に見せる。</p>
+          <h4>世界を変えるような仕事をする</h4>
+          <h5>&nbsp;&nbsp;&nbsp;自分のした仕事が誰かの幸せにつながるような仕事を見つける。たとえせまい世界でも、その世界を変えるような仕事し、自分が存在する世界と存在しない世界、その差を大きくする。輝きながら仕事をしている姿を家族に見せる。</h6>
         </div>
       </div>
-	  </div>
-  </body>
+	</body>
 </html>
