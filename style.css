@@ -40,7 +40,7 @@ a {
 nav h1 {
   float: left;
   font-size: 22px;
-  font-family: cursive, Script, cursive;
+  font-family: "Kaushan Script", Script, cursive;
   padding-left: 20px;
   padding-top: 8px;
   width: 100%;
@@ -263,28 +263,32 @@ nav li a {
 }
 
 .Work1 {
-  background: repeating-linear-gradient(45deg, rgba(68, 68, 68, 0.7), #444 15px, #888 0, #888 35px);
+  background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
-  height: 33vw;
-  width: 33vw;
+  height: 31vw;
+  width: 31vw;
   margin-left: auto;
   margin-right: auto;
   top: 150px;
   left: 10%;
 }
 
+
 .Work1 h3 {
-  color: white;
+  color: black;
   text-align: center;
-  padding-top: 35%;
-  font-size: 25px;
+  font-size: 18px;
+}
+
+.Work1 p img {
+  width: 100%;
 }
 
 .Work2 {
   background: repeating-linear-gradient(45deg, rgba(68, 68, 68, 0.7), #444 15px, #888 0, #888 35px);
   position: absolute;
-  height: 33vw;
-  width: 33vw;
+  height: 31vw;
+  width: 31vw;
   margin-left: auto;
   margin-right: auto;
   top: 150px;
@@ -311,9 +315,12 @@ nav li a {
 }
 
 .Work1 h3 {
-  font-size: 15px;
+  font-size: 14px;
 }
 
+.Work1 p img {
+  width: 100%;
+}
 
 .Work2 {
   top: 90px;
@@ -336,9 +343,12 @@ nav li a {
   left: 10%;
 }
 
+.Work1 p img {
+  width: 100%;
+}
+
 .Work1 h3 {
-  font-size: 35px;
-  padding-top: 40%;
+  font-size: 25px;
 }
 
 
