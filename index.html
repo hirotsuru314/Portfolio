@@ -7,7 +7,14 @@
 	  <meta name="description" content="Abnormalな人生を歩み続けるhirotsuruのポートフォリオサイト。プロフィール、開発実績、ブログ、ビジョンなどを紹介する。" />
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <meta name="viewport" content="width=1000">
+    
+    <!-- BootstrapのCSS読み込み -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- jQuery読み込み -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
     <script>
       $(function(){
         $('a[href^=#]').click(function(){
@@ -47,61 +54,82 @@
         <p id="motto">Challenging myself,<br>pushing my limits away!</p>
     </div>
 <!----------  プロフィール画面	----------> 
-      <div class="Profile clearfix" id="Profile">
+      <div class="Profile container-fluid">
         <h2>Profile</h2>
-        <div class="Profile_left">
-          <h3><i>Hirotsuru</i></h3><br>
-          <p><img src="profile_img.jpg" alt=""></p>
-          <div class="Career">
-            <dl>
-              <dt>2012年9月</dt>
-                <dd>&nbsp;&nbsp;&nbsp;&nbsp;九州大学大学院 材料物性工学 修士号取得後、博士課程に進学</dd>
-              <dt>2013年4月</dt>
-                <dd>&nbsp;&nbsp;&nbsp;&nbsp;日本学術振興会特別研究員となる</dd>
-              <dt>2014年4月</dt>
-                <dd>&nbsp;&nbsp;&nbsp;&nbsp;博士課程を中退後、公安職に就く</dd>
-              <dt>2016年1月</dt>
-                <dd>&nbsp;&nbsp;&nbsp;&nbsp;プログラミングに出会う</dd>  
-              <dt>〜現在</dt>
-                <dd>&nbsp;&nbsp;&nbsp;&nbsp;エンジニアを目指して日々奮闘中</dd>
-            </dl>  
+        <div class="row">
+          <div class="Profile_left col-md-6">
+            <h3><i>Hirotsuru</i></h3><br>
+            <p><img src="profile_img.jpg" alt=""></p>
+            <div class="Career">
+              <dl>
+                <dt>2012年9月</dt>
+                  <dd>&nbsp;&nbsp;&nbsp;&nbsp;九州大学大学院 材料物性工学 修士号取得後、博士課程に進学</dd>
+                <dt>2013年4月</dt>
+                  <dd>&nbsp;&nbsp;&nbsp;&nbsp;日本学術振興会特別研究員となる</dd>
+                <dt>2014年4月</dt>
+                  <dd>&nbsp;&nbsp;&nbsp;&nbsp;博士課程を中退後、公安職に就く</dd>
+                <dt>2016年1月</dt>
+                  <dd>&nbsp;&nbsp;&nbsp;&nbsp;プログラミングに出会う</dd>  
+                <dt>〜現在</dt>
+                  <dd>&nbsp;&nbsp;&nbsp;&nbsp;エンジニアを目指して日々奮闘中</dd>
+              </dl>  
+            </div>
           </div>
-        </div>
-        <div class="Profile_right">
-          <h3><i>My interests</i></h3>
-          <p><img src="my_interests.jpeg" alt=""></p>
+          <div class="Profile_right col-md-6">
+            <h3><i>My interests</i></h3>
+            <p><img src="my_interests.jpeg" alt=""></p>
+          </div>
         </div>
       </div>
 
 <!----------  Works画面	---------->       
       <div class="Works" id="Works">
         <h2>Works</h2>
-　　    <div class="Work1">
-　　      <h3>TsubuMeMo<br>〜つぶやき型メモ〜</h3>
-　　      <p><a href="https://tsubumemo.herokuapp.com/" target="_blank"><img src="TsubuMeMo.png" alt=""></a></p>
-        </div>
-        <div class="Work2">
-          <h3>Coming soon!</h3>
-        </div>
-      </div>
+        
+        <div class="row">
+	        <div class="col-md-6 col-sm-6 col-xs-6 Work1">
+		        <div class="thumbnail">
+			        <a href="https://tsubumemo.herokuapp.com/" target="_blank"><img src="TsubuMeMo.png"></a>
+			        <div class="caption">
+				        <h3><b>TsubuMeMo 〜つぶやき型メモ〜</b></h3>
+				        <p>SNSのタイムラインのようにメモを残すサービスです。つぶやきながらメモすることで、時間の流れとともにメモを振り返ることができます。</p>
+			        </div>
+		        </div>
+		      </div>
+		      
+	        <div class="col-md-6 col-sm-6 col-xs-6 Work2">
+		        <div class="thumbnail">
+			        <img src="Next_application.001.jpeg">
+			        <div class="caption">
+				        <h3>Coming soon!</br></br></br></h3>
+				        
+			        </div>
+		        </div>
+		      </div>
+		      
+		      
+	      </div>
+	   </div>
       
 <!----------  Blog画面	---------->       
-      <div class="Blog clearfix" id="Blog">
+      <div class="Blog container-fluid">
         <h2>Blog</h2>
-        <div class="Blog_left">
-          <p><a href="http://hirotsuru.hatenablog.com/" target="_blank"><img src="blog.png" alt=""></a></p>
-        </div>
-        <div class="Blog_right">
-          <h3>はてなブログを書いています！</h3>
-          <p id="blog_intro">経験ゼロ、現職肉体系の私がプログラミングを本気で勉強し、転職するまでの道のりを書いていきます。<br>
-          内容は、Webアプリケーションの開発記録や勉強したことのまとめ、思いついたことなどいろいろです。<br>
-          まだまだ技術的にも未熟ですが、とにかく積極的に学び、どんどんアウトプットしていきたいと思うので、ぜひ読んで見てください！</p>
-          <h3>抜粋記事</h3>
-            <ul>
-              <li><a href="http://hirotsuru.hatenablog.com/entry/2016/05/03/200158" target=_blank>・経験ゼロのド素人がWebアプリケーションを作ってみた</a></li>
-              <li><a href="http://hirotsuru.hatenablog.com/entry/2016/04/24/173830" target=_blank>・ノンプログラマが１週間でポートフォリオを作ってみた</a></li>
-              <li><a href="http://hirotsuru.hatenablog.com/entry/2016/04/02/155121" target=_blank>・自己紹介　〜Abnormalについて〜</a></li>
-            </ul>
+        <div class="row">
+          <div class="Blog_left col-md-6">
+            <p><a href="http://hirotsuru.hatenablog.com/" target="_blank"><img src="blog.png" alt=""></a></p>
+          </div>
+          <div class="Blog_right col-md-6">
+            <h3><b>はてなブログを書いています！</b></h3>
+            <p id="blog_intro">経験ゼロ、現職肉体系の私がプログラミングを本気で勉強し、転職するまでの道のりを書いていきます。<br>
+            内容は、Webアプリケーションの開発記録や勉強したことのまとめ、思いついたことなどいろいろです。<br>
+            まだまだ技術的にも未熟ですが、とにかく積極的に学び、どんどんアウトプットしていきたいと思うので、ぜひ読んで見てください！</p>
+            <h3><b>抜粋記事</b></h3>
+              <ul>
+                <li><a href="http://hirotsuru.hatenablog.com/entry/2016/05/03/200158" target=_blank>・経験ゼロのド素人がWebアプリケーションを作ってみた</a></li>
+                <li><a href="http://hirotsuru.hatenablog.com/entry/2016/04/24/173830" target=_blank>・ノンプログラマが１週間でポートフォリオを作ってみた</a></li>
+                <li><a href="http://hirotsuru.hatenablog.com/entry/2016/04/02/155121" target=_blank>・自己紹介　〜Abnormalについて〜</a></li>
+              </ul>
+          </div>
         </div>
       </div>
 
