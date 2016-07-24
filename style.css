@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  min-width: 850px;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -104,7 +105,7 @@ nav li a {
 
 .Top {
   height: 670px;
-  background-image: url("top_img.jpg");  
+  background-image: url("images/top_img.jpg");  
   background-color: white;
   background-size: 100% auto; 
   background-repeat: no-repeat;
@@ -119,16 +120,6 @@ nav li a {
 }
 
 
-/* ### 600 px以下 ### */
-@media (max-width: 600px) {
-.Top {
-  height: 400px;
-}  
-  
-.Top p#motto {
-  font-size: 25px;
-}
-}
 
 /* ### 992 px以上 ### */
 @media (min-width: 992px) {
@@ -188,28 +179,8 @@ nav li a {
 
 .Profile_right img {
   text-align: center;
-  width: 70%;
+  width: 65%;
   margin: 0 auto;
-}
-
-
-/* ### 600 px以下 ### */
-@media (max-width: 600px) {
-.Profile {
-  height: 910px;
-}
-
-.Profile h2 {
-  font-size: 35px;
-}
-
-.Profile_left h3 {
-  font-size: 20px;
-}
-
-.Profile_right h3 {
-  font-size: 20px;
-}
 }
 
 /* ### 992 px以上 ### */
@@ -240,7 +211,7 @@ nav li a {
 
 .Works {
   height: 600px;
-  background-image: url("works.jpg");  
+  background-image: url("images/works.jpg");  
   background-size: 100% auto; 
   background-repeat: no-repeat;
 }
@@ -249,12 +220,12 @@ nav li a {
   font-size: 45px;
   text-align: center;
   padding-top: 15px;
-  padding-bottom: 10px;  
+  padding-bottom: 30px;  
 }
 
-.thumbnail {
-  margin-left: 60px;
-  margin-right: 60px;
+.Work > .thumbnail {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .caption h3 {
@@ -270,39 +241,6 @@ nav li a {
   padding-bottom: 10px;
 }
 
-/* ### 600 px以下 ### */
-@media (max-width: 600px) {
-.Works {
-  height: 500px;
-}  
-
-.Works h2 {
-  font-size: 45px;
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 10px;  
-}
-
-.thumbnail {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.caption h3 {
-  font-size: 12px;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.caption p {
-  font-size: 8px;
-  text-align: center;
-  padding-bottom: 10px;
-}
-
-}
-
 /* ### 992 px以上 ### */
 @media (min-width: 992px) {
 .Works {
@@ -313,16 +251,16 @@ nav li a {
   font-size: 45px;
   text-align: center;
   padding-top: 20px;
-  padding-bottom: 30px;  
+  padding-bottom: 40px;  
 }
 
-.thumbnail {
-  margin-left: 70px;
-  margin-right: 70px;
+.Work > .thumbnail {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .caption h3 {
-  font-size: 25px;
+  font-size: 24px;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -333,17 +271,17 @@ nav li a {
   text-align: center;
   padding-bottom: 13px;
 }
-
-
 }
 
-
 /* ########## Blog画面 ########## */
+.Blog {
+  height: 950px;
+}
 
 .Blog h2 {
   font-size: 45px;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 15px;
   padding-bottom: 5px;  
 }
 
@@ -380,14 +318,6 @@ nav li a {
   padding-left: 30px;
 }
 
-
-/* ### 600 px以下 ### */
-@media (max-width: 600px) {
-.Blog {
-  height: 910px;
-}
-}
-
 /* ### 992 px以上 ### */
 @media (min-width: 992px) {
 .Blog {
@@ -411,7 +341,7 @@ nav li a {
 }
 
 .Blog_right li {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 48px;
 }
 }
@@ -419,213 +349,86 @@ nav li a {
 
 /* ########## Vision画面 ########## */
 
-.Vision {
-  height: 550px;
+.Visions {
+  height: 470px;
   position: relative;
   background-color: WhiteSmoke;
-  background-image: url("vision.jpg");  
+  background-image: url("images/vision.jpg");  
   background-size: 100% auto; 
   background-repeat: no-repeat;
 }
 
-.Vision h2 {
+.Visions h2 {
   font-size: 30px;
   text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-.Vision h3 {
+.Visions h3 {
   font-size: 20px;
   text-align: center;
+  margin-bottom: 25px;
 }
 
   
-.Vision1 {
+.Vision > .thumbnail {
   background-color: rgba(255, 255, 255, 0.4);
-  position: absolute;
-  height: 32vw;
-  width: 35vw;
-  margin-left: auto;
-  margin-right: auto;
-  top: 20%;
-  left: 5%;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 
-.Vision1 h4 {
-  font-size: 18px;
+.Vision > .thumbnail h4 {
+  font-size: 20px;
   text-align: center;
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
-.Vision1 h5 {
-  font-size: 15px;
+.Vision > .thumbnail h5 {
+  font-size: 16px;
   padding-left: 10px;
   padding-right: 10px;
-  line-height: 1.7;  
-}
-
-.Vision2 {
-  background-color: rgba(255, 255, 255, 0.4);
-  position: absolute;
-  height: 32vw;
-  width: 35vw;
-  margin-left: auto;
-  margin-right: auto;
-  top: 20%;
-  left: 55%;
-}
-
-.Vision2 h4 {
-  font-size: 18px;
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.Vision2 h5 {
-  font-size: 15px;
-  padding-left: 13px;
-  padding-right: 13px;
-  line-height: 1.7;  
-}
-
-
-/* ### 600 px以下 ### */
-@media (max-width: 600px) {
-.Vision h2 {
-  font-size: 12px;
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.Vision h3 {
-  font-size: 10px;
-  text-align: center;
-}
-
-  
-.Vision1 {
-  background-color: rgba(255, 255, 255, 0.4);
-  position: absolute;
-  height: 32vw;
-  width: 35vw;
-  margin-left: auto;
-  margin-right: auto;
-  top: 10%;
-  left: 5%;
-}
-
-.Vision1 h4 {
-  font-size: 8px;
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.Vision1 h5 {
-  font-size: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-  line-height: 1.7;  
-}
-
-.Vision2 {
-  background-color: rgba(255, 255, 255, 0.4);
-  position: absolute;
-  height: 32vw;
-  width: 35vw;
-  margin-left: auto;
-  margin-right: auto;
-  top: 10%;
-  left: 55%;
-}
-
-.Vision2 h4 {
-  font-size: 8px;
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.Vision2 h5 {
-  font-size: 8px;
-  padding-left: 13px;
-  padding-right: 13px;
-  line-height: 1.7;  
-}
+  line-height: 1.8;  
 }
 
 /* ### 992 px以上 ### */
 @media (min-width: 992px) {
-.Vision {
-  height: 700px;
+.Visions {
+  height: 600px;
 }
   
-.Vision h2 {
+.Visions h2 {
   font-size: 45px;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 10px;
 }
 
-.Vision h3 {
+.Visions h3 {
   font-size: 33px;
   text-align: center;
 }
 
-  
-.Vision1 {
+.Vision > .thumbnail {
   background-color: rgba(255, 255, 255, 0.4);
-  position: absolute;
-  height: 360px;
-  width: 420px;
-  margin-left: auto;
-  margin-right: auto;
-  top: 25%;
-  left: 10%;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 
-.Vision1 h4 {
+.Vision > .thumbnail h4 {
   font-size: 24px;
   text-align: center;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
-.Vision1 h5 {
-  font-size: 21px;
+.Vision > .thumbnail h5 {
+  font-size: 19px;
   padding-left: 10px;
   padding-right: 10px;
-  line-height: 1.9;  
-}
-
-.Vision2 {
-  background-color: rgba(255, 255, 255, 0.4);
-  position: absolute;
-  height: 360px;
-  width: 420px;
-  margin-left: auto;
-  margin-right: auto;
-  top: 25%;
-  left: 60%;
-}
-
-.Vision2 h4 {
-  font-size: 24px;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.Vision2 h5 {
-  font-size: 22px;
-  padding-left: 13px;
-  padding-right: 13px;
-  line-height: 1.9;  
+  line-height: 2.0;  
 }
 }
