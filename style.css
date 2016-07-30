@@ -11,8 +11,13 @@ html {
 }
 
 body {
+  width: 100%;
   min-width: 850px;
   -webkit-text-size-adjust: 100%;
+}
+
+.wrap {
+  overflow: hidden;
 }
 
 a {
